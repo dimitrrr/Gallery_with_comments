@@ -8,5 +8,8 @@ export const imageAPI = {
     getImages() {
         return instance.get()
             .then(response => response.data);
+    },
+    getImageData(id) {
+        return instance.get(`/${id}`);
     }
 }
