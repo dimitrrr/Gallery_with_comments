@@ -11,5 +11,8 @@ export const imageAPI = {
     },
     getImageData(id) {
         return instance.get(`/${id}`);
+    },
+    postComment(id, value) {
+        return instance.post(`/${id}/comments`, value);
     }
 }
